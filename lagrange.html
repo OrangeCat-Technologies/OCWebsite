@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lagrange</title>
+    <link rel="icon" type="image/gif/png/svg" href="assets/orangecat_technologies_pvt_ltd_logo.jpeg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      select option {
+        background-color: #151515;
+      }
+    </style>
+    <script src="app.js"></script>
+  </head>
+  <body class="bg-[#151515] text-white">
+    <!-- Header -->
+
+    <header class="flex justify-between items-center h-20 w-10/12 mx-auto">
+      <a href="index.html">
+        <div class="flex items-center">
+          <img
+            alt="Orange Cat Logo"
+            class="mr-3"
+            height="40"
+            src="assets/logo.svg"
+          />
+          <span class="text-xl font-bold"> OrangeCat </span>
+        </div>
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="team.html"
+        >
+          The Team
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="aboutus.html"
+        >
+          Company
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="portfolio.html"
+        >
+          Portfolio
+        </a>
+      </nav>
+
+      <nav class="md:hidden">
+        <select
+          id="mobileMenu"
+          class="w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          onchange="navigateTo(this.value)"
+        >
+          <option value="">Menu</option>
+          <option value="team.html">The Team</option>
+          <option value="aboutus.html">Company</option>
+          <option value="portfolio.html">Portfolio</option>
+        </select>
+      </nav>
+    </header>
+    <main class="text-center px-8 space-y-12 my-12 w-10/12 mx-auto">
+      <img
+        alt="Lagrange logo"
+        class="mx-auto md:w-64 w-32"
+        src="assets/lagrangelogo.svg"
+      />
+      <img
+        alt="Laptop with code editor"
+        src="assets/lagrangebigdemo.svg"
+        class="mx-auto"
+      />
+      <p class="md:text-[1.75rem] tracking-wider">
+        Lagrange is an end-to-end AI development partner that instantly converts
+        your natural language queries into fully functional codebases through a
+        powerful three-step process:
+      </p>
+      <div class="flex justify-between gap-4 md:flex-row flex-col">
+        <div class=" text-white rounded-lg shadow-lg p-6 w-80">
+          <h2 class="text-xl font-bold">1. Intelligent Research</h2>
+          <p>Lagrange analyzes user queries, gathers relevant web information, and presents curated insights to deepen understanding of problems and solutions.</p>
+        </div>
+
+        <div class=" text-white rounded-lg shadow-lg p-6 w-80">
+          <h2 class="text-xl font-bold">2. Strategic Planning</h2>
+          <p>Lagrange formulates a comprehensive, step-by-step development strategy. It considers factors like scalability, performance, and best practices.</p>
+        </div>
+        <div class=" text-white rounded-lg shadow-lg p-6 w-80">
+          <h2 class="text-xl font-bold">3. Adaptive Coding</h2>
+          <p>Lagrange generates entire applications from strategic plans, featuring real-time error resolution, debugging, and web-based resource optimization.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="text-gray-300 py-16 flex flex-col gap-16 mt-auto">
+      <div class="w-10/12 h-px bg-white mx-auto"></div>
+      <div class="w-10/12 mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+        >
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-2">
+              <img src="assets/logo.svg" alt="Orange Cat Logo" />
+              <span class="text-xl font-semibold ml-2">Orange Cat</span>
+            </div>
+            <p class="text-sm mb-4 max-w-md font-normal">
+              Changing the World, one token at a time.
+            </p>
+            <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+          </div>
+          <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+            <div>
+              <h3 class="text-lg font-light mb-2">Follow us</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-light mb-2">Contact</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="mailto:info@orangecat.com">Email</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

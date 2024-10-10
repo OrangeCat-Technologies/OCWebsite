@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/gif/png/svg" href="assets/orangecat_technologies_pvt_ltd_logo.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+  </head>
+  <body class="text-white font-roboto">
+    <div class="min-h-screen flex flex-col">
+      <header class="bg-white text-black flex justify-between items-center h-20 mx-auto w-10/12">
+        <a href="index.html">
+          <div class="flex items-center">
+            <img alt="Orange Cat Logo" class="mr-3" height="40" src="assets/logo.svg" />
+            <span class="text-xl font-bold">OrangeCat</span>
+          </div>
+        </a>
+        <nav class="space-x-4 md:flex hidden">
+          <button class="bg-black text-white py-2 px-4 rounded-full">
+            <a href="team.html">Team</a>
+          </button>
+          <button class="bg-black text-white py-2 px-4 rounded-full">
+            <a href="aboutus.html">Company</a>
+          </button>
+          <button class="bg-black text-white py-2 px-4 rounded-full">
+            <a href="lagrange.html">Lagrange</a>
+          </button>
+        </nav>
+
+        <nav class="md:hidden">
+          <select
+            id="mobileMenu"
+            class="w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            onchange="navigateTo(this.value)"
+          >
+            <option value="">Menu</option>
+            <option value="team.html">The Team</option>
+            <option value="aboutus.html">Company</option>
+            <option value="lagrange.html">Lagrange</option>
+          </select>
+        </nav>
+      </header>
+
+      <main class="flex-grow flex flex-col md:flex-row gap-8 md:items-center items-end justify-between bg-white text-black md:pt-16 md:py-8 py-12 overflow-hidden">
+        <div class="md:w-1/2 md:pl-32 mx-auto w-10/12 md:w-full text-center md:text-left mb-auto max-w-3xl md:mt-10">
+          <h1 class="md:text-8xl text-5xl font-bold mb-6">About Us</h1>
+          <p class="text-xl tracking-wider mt-12">
+            At OrangeCat, we create powerful software designed to expand horizons. As a user-centric company based in Noida, India, we focus on leveraging the most advanced technologies to solve real-world problems that truly matter.
+            </p><p class="text-xl tracking-wider mt-12">
+              Our team of motivated, young engineers thrives on pushing boundaries, unafraid to tackle challenges others shy away from. We have built such solutions before, we are building even more transformative products today, and we will continue to evolve, constantly creating tools that empower users and industries alike.              </p>
+        </div>
+        <img
+          alt="Illustration of an orange cat"
+          src="assets/aboutuscat.svg"
+          class="ml-auto md:pl-0 pl-8"
+        />
+      </main>
+
+      <footer class="text-gray-300 py-16 flex flex-col gap-16 bg-[#151515]">
+        <div class="w-10/12 h-px bg-white mx-auto"></div>
+        <div class="w-10/12 mx-auto px-4">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div class="mb-6 md:mb-0">
+              <div class="flex items-center mb-2">
+                <img src="assets/logo.svg" alt="" />
+                <span class="text-xl font-semibold ml-2">Orange Cat</span>
+              </div>
+              <p class="text-sm mb-4 max-w-md font-normal">
+                Changing the World, one token at a time.
+              </p>
+              <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+            </div>
+            <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+              <div>
+                <h3 class="text-lg font-light mb-2">Follow us</h3>
+                <ul class="space-y-2 font-normal text-white">
+                  <li><a href="https://www.linkedin.com/company/orangecat-technologies-pvt-ltd/about/?viewAsMember=false">LinkedIn</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61566877884409">Facebook</a></li>
+                  <li><a href="https://github.com/OrangeCat-Technologies">GitHub</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-light mb-2">Contact</h3>
+                <ul class="space-y-2 font-normal text-white">
+                  <li><a href="prithvi@orangecat.ai">Email</a></li>
+                  <li><a href="parth@orangecat.ai">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orange Cat Team</title>
+    <link rel="icon" type="image/gif/png/svg" href="assets/orangecat_technologies_pvt_ltd_logo.jpeg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      select option {
+        background-color: #151515;
+      }
+    </style>
+    <script src="app.js"></script>
+  </head>
+  <body class="bg-black text-white flex flex-col min-h-screen">
+    <header class="flex justify-between items-center h-20 w-10/12 mx-auto">
+      <a href="index.html">
+        <div class="flex items-center">
+          <img
+            alt="Orange Cat Logo"
+            class="mr-3"
+            height="40"
+            src="assets/logo.svg"
+          />
+          <span class="text-xl font-bold">OrangeCat</span>
+        </div>
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="team.html"
+        >
+          The Team
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="aboutus.html"
+        >
+          Company
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="lagrange.html"
+        >
+          Lagrange
+        </a>
+      </nav>
+
+      <nav class="md:hidden">
+        <select
+          id="mobileMenu"
+          class="w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          onchange="navigateTo(this.value)"
+        >
+          <option value="">Menu</option>
+          <option value="team.html">The Team</option>
+          <option value="aboutus.html">Company</option>
+          <option value="lagrange.html">Lagrange</option>
+        </select>
+      </nav>
+    </header>
+    <style>
+      main.scale-down {
+        font-size: 0.7rem; /* Adjust the base font size within the main container */
+      }
+    
+      main.scale-down .h-80 {
+        height: 56px; /* 80px original height x 0.7 scaling factor */
+      }
+    
+      main.scale-down div, main.scale-down img {
+        transform: scale(0.7); /* Scales down images and div elements */
+        transform-origin: top left;
+      }
+    
+      main.scale-down .p-4 {
+        padding: 0.7rem; /* Adjust padding */
+      }
+    
+      /* Adjust any specific margin or padding as necessary */
+      main.scale-down .gap-x-16 {
+        column-gap: 11.2px; /* 16px original gap x 0.7 scaling factor */
+      }
+    
+      main.scale-down .gap-y-8 {
+        row-gap: 5.6px; /* 8px original gap x 0.7 scaling factor */
+      }
+    </style>
+
+    <main class="flex-grow mx-auto w-10/12 h-7/12 py-16">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8"
+      >
+        <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
+          <div class="h-80 w-full">
+            <img
+              alt="Portrait of Parth Sharma"
+              class="w-full h-full object-cover"
+              src="assets/44425093047.png"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-black">Parth Sharma</h3>
+            <p class="text-black">
+              Parth Sharma excels in deep learning and AI, with  capabilities in developing cutting-edge models and solutions. His proficiency spans Python, machine learning frameworks, and cloud platforms, underpinned by significant achievements in national and international hackathons.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
+          <div class="h-80 w-full">
+            <img
+              alt="Portrait of Vidhan Tiwari"
+              class="w-full h-full object-cover"
+              src="assets/vidhan.png"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-black">Vidhan Tiwari</h3>
+            <p class="text-black">
+              Vidhan is an experienced business development professional skilled in creative brainstorming and tech-business strategy. His background in tech consulting and NGO fundraising bridges technology and business.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
+          <div class="h-80 w-full">
+            <img
+              alt="Portrait of Virag Tiwari"
+              class="w-full h-full object-cover"
+              src="assets/virag.JPG"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-black">Virag Tiwari</h3>
+            <p class="text-black">
+              He has a strong background in AI, specializing in LLMs, Transformers, and CNNs. He has developed AI products, including a tool for detecting dark patterns on e-commerce sites, and played a key role in bringing projects like Lagrange to life
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
+          <div class="h-80 w-full">
+            <img
+              alt="Portrait of Prithvi Singh Chohan"
+              class="w-full h-full object-cover"
+              src="assets/prithvi OC pic.jpg"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-black">Prithvi Singh Chohan</h3>
+            <p class="text-black">
+              As an undergraduate researcher at DTU, he gained expertise in LLMs, Fuzzy Logic, and Neural Networks. His skills were further refined during an internship at Olive Gaea. His technical proficiency and problem-solving abilities are key strengths.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
+          <div class="h-80 w-full">
+            <img
+              alt="Portrait of Saksham Singh Bisht"
+              class="w-full h-full object-cover"
+              src="assets/saksham.png"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-black">Saksham Singh Bisht</h3>
+            <p class="text-black">
+              As a dedicated design enthusiast,  he has a keen eye for detail and a strong commitment to aesthetic visuals and creating meaningful user experiences. He is excited to bring fresh and  innovative ideas to the world of visual communication and user interaction  design.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-[1rem] overflow-hidden h-full w-full">
+          <div class="h-80 w-full">
+            <img
+              alt="Portrait of Ishaan Jain"
+              class="w-full h-full object-cover"
+              src="assets/ishaan.png"
+            />
+          </div>
+          <div class="p-4">
+            <h3 class="text-xl font-bold text-black">Ishaan Jain</h3>
+            <p class="text-black">
+              Ishaan is passionate about Interaction Designand Data Science. He has participated in severalHackathons and Designathons. He is passionate about designing user experiences and interfaces that are both functional and engaging
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-gray-300 py-16 flex flex-col gap-16 mt-auto">
+      <div class="w-10/12 h-px bg-white mx-auto"></div>
+      <div class="w-10/12 mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+        >
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-2">
+              <img src="assets/logo.svg" alt="Orange Cat Logo" />
+              <span class="text-xl font-semibold ml-2">Orange Cat</span>
+            </div>
+            <p class="text-sm mb-4 max-w-md font-normal">
+              Changing the World, one token at a time.
+            </p>
+            <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+          </div>
+          <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+            <div>
+              <h3 class="text-lg font-light mb-2">Follow us</h3>
+                <ul class="space-y-2 font-normal text-white">
+                  <li><a href="https://www.linkedin.com/company/orangecat-technologies-pvt-ltd/about/?viewAsMember=false">LinkedIn</a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61566877884409">Facebook</a></li>
+                  <li><a href="https://github.com/OrangeCat-Technologies">GitHub</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-lg font-light mb-2">Contact</h3>
+                <ul class="space-y-2 font-normal text-white">
+                  <li><a href="prithvi@orangecat.ai">Email</a></li>
+                  <li><a href="parth@orangecat.ai">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

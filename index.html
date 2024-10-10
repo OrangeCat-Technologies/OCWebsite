@@ -1,0 +1,184 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Orange Cat</title>
+    <link rel="icon" type="image/gif/png/svg" href="assets/orangecat_technologies_pvt_ltd_logo.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      select option {
+        background-color: #151515;
+      }
+    </style>
+    <script src="app.js"></script>
+  </head>
+  <body class="bg-[#151515] text-white">
+    <!-- Header -->
+    <header class="flex justify-between items-center h-20 w-10/12 mx-auto">
+      <a href="index.html">
+        <div class="flex items-center">
+          <img
+            alt="Orange Cat Logo"
+            class="mr-3"
+            height="40"
+            src="assets/logo.svg"
+          />
+          <span class="text-xl font-bold"> OrangeCat </span>
+        </div>
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="team.html"
+        >
+          The Team
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="aboutus.html"
+        >
+          Company
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="portfolio.html"
+        >
+          Portfolio
+        </a>
+      </nav>
+
+      <nav class="md:hidden">
+        <select
+          id="mobileMenu"
+          class="w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          onchange="navigateTo(this.value)"
+        >
+          <option value="">Menu</option>
+          <option value="team.html">The Team</option>
+          <option value="aboutus.html">Company</option>
+          <option value="portfolio.html">Portfolio</option>
+        </select>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col md:flex-row items-center justify-between py-8 mx-auto w-10/12"
+    >
+      <div class="md:w-1/2 md:text-left text-center">
+        <h1 class="text-6xl md:text-5xl font-bold mb-6">
+          Redefining Innovation
+        </h1>
+        <p class="text-2xl mb-6">
+          Creating solutions to deliver the best and empower users to achieve more, one step at a time.
+        </p>
+        <p class="text-lg">
+          Our mission is clear- to keep pushing the frontiers of what's possible.
+        </p>
+        <!-- <button class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full">
+          Get in Touch
+        </button> -->
+      </div>
+      <img
+        alt="Empowering Your Vision with Orange Cat"
+        src="assets/phonecat.svg"
+        class="md:mt-0 mt-8"
+      />
+    </section>
+    <!-- Our Work Section -->
+    <section
+      class="py-8 md:pl-32 pl-0 bg-white text-gray-900 space-y-12 overflow-hidden relative"
+    >
+      <h2 class="text-4xl md:text-6xl text-left mx-auto w-10/12 md:w-full">
+        Our Work
+      </h2>
+      <div
+        class="flex flex-col md:flex-row items-start justify-between mx-auto w-10/12 md:w-full"
+      >
+      <style>
+        .text-reduced {
+          font-size: 1.1rem; /* Adjust based on your existing `text-xl` size */
+        }
+      </style>
+      
+      <div class="md:w-1/3 flex flex-col gap-6">
+        <p class="text-reduced tracking-wider">
+          Revolutionizing the way we code, meet
+          <span class="font-bold">Lagrange</span>,
+          our word powered coding assistant.
+        </p>
+        <p class="text-reduced tracking-wider">
+          Lagrange is an AI development partner that instantly converts your ideas into functional code.
+        </p>
+        <button class="bg-gray-800 text-white font-bold py-2 px-6 rounded-full w-fit ml-auto">
+          <a href="lagrange.html">Learn More</a>
+        </button>
+        <img
+          src="assets/hellocat.svg"
+          loading="lazy"
+          alt=""
+          class="absolute -bottom-48 left-0 hidden xl:flex"
+        />
+      </div>
+      
+      
+        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+          <img
+            alt="Lagrange Coding Assistant Interface"
+            src="assets/lagrange.svg"
+            loading="lazy"
+            class="scale-125 xl:-ml-40 ml-0 mt-16 xl:mt-0"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-gray-300 py-16 flex flex-col gap-16">
+      <div class="w-10/12 h-px bg-white mx-auto"></div>
+      <div class="w-10/12 mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+        >
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-2">
+              <img src="assets/logo.svg" alt="" />
+              <span class="text-xl font-semibold ml-2">Orange Cat</span>
+            </div>
+            <p class="text-sm mb-4 max-w-md font-normal">
+              Changing the World, one token at a time.
+            </p>
+            <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+          </div>
+          <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+            <div>
+              <h3 class="text-lg font-light mb-2">Follow us</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-light mb-2">Contact</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="prithvi@orangecat.ai">Email</a></li>
+                <li><a href="parth@orangecati.ai">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

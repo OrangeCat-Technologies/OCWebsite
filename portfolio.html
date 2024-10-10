@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orange Cat</title>
+    <link rel="icon" type="image/gif/png/svg" href="assets/orangecat_technologies_pvt_ltd_logo.jpeg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js"></script>
+    <style>
+      select option {
+        background-color: #151515;
+      }
+    </style>
+  </head>
+  <body class="bg-[#151515] text-white flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="flex justify-between items-center h-20 w-10/12 mx-auto">
+      <a href="index.html">
+        <div class="flex items-center">
+          <img
+            alt="Orange Cat Logo"
+            class="mr-3"
+            height="40"
+            src="assets/logo.svg"
+          />
+          <span class="text-xl font-bold">OrangeCat</span>
+        </div>
+      </a>
+      <nav class="space-x-6 hidden md:flex">
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="team.html"
+        >
+          The Team
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="aboutus.html"
+        >
+          Company
+        </a>
+        <a
+          class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full"
+          href="lagrange.html"
+        >
+          Lagrange
+        </a>
+      </nav>
+
+      <nav class="md:hidden">
+        <select
+          id="mobileMenu"
+          class="w-full py-2 px-3 border border-gray-300 bg-transparent rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+          onchange="navigateTo(this.value)"
+        >
+          <option value="">Menu</option>
+          <option value="team.html">The Team</option>
+          <option value="aboutus.html">Company</option>
+          <option value="lagrange.html">Lagrange</option>
+        </select>
+      </nav>
+    </header>
+    <main
+      class="flex-grow flex justify-center items-center flex-wrap gap-8 p-6"
+    >
+      <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
+        <img
+          alt="Laptop with Xperience Chatbot"
+          class="rounded-t-lg mb-4"
+          height="180"
+          src="assets/xperience.svg"
+          width="320"
+        />
+        <h2 class="text-xl font-bold">XPERIENCE CHATBOT</h2>
+        <p>Your Ultimate Event Management partner. Plan birthdays, weddings, and special events with state-of-the-art LLMs. Check it out here: https://kussi.vercel.app</p>
+      </div>
+      <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
+        <img
+          alt="Room Design Selection"
+          class="rounded-t-lg mb-4"
+          height="180"
+          src="assets/nirwana.svg"
+          width="320"
+        />
+        <h2 class="text-xl font-bold">NIRVANA.AI (Ongoing)</h2>
+        <p>We collaborated with nirwana.ai, a revolutionary in the interior design and home improvement industry, to integrate the latest latest generative models in the ecosystem.</p>
+      </div>
+      <div class="bg-white text-black rounded-lg shadow-lg p-6 w-80">
+        <img
+          alt="Laptop with Auto Resizer"
+          class="rounded-t-lg mb-4"
+          height="180"
+          src="assets/autoresizer.svg"
+          width="320"
+        />
+        <h2 class="text-xl font-bold">AUTO AD-GEN</h2>
+        <p>We Collaborated with Gauge Advertising to create an automated software that can generate effective Ad campaigns with just the click of a button. </p>
+      </div>
+    </main>
+    <footer class="text-gray-300 py-16 flex flex-col gap-16 mt-auto">
+      <div class="w-10/12 h-px bg-white mx-auto"></div>
+      <div class="w-10/12 mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center"
+        >
+          <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-2">
+              <img src="assets/logo.svg" alt="Orange Cat Logo" />
+              <span class="text-xl font-semibold ml-2">Orange Cat</span>
+            </div>
+            <p class="text-sm mb-4 max-w-md font-normal">
+              Changing the World, one token at a time.
+            </p>
+            <p class="text-xs font-normal">&copy; 2024 Orange cat Pvt Ltd</p>
+          </div>
+          <div class="flex flex-row justify-between md:w-fit w-full gap-12">
+            <div>
+              <h3 class="text-lg font-light mb-2">Follow us</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="https://www.linkedin.com/company/orangecat-technologies-pvt-ltd/about/?viewAsMember=false">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61566877884409">Facebook</a></li>
+                <li><a href="https://github.com/OrangeCat-Technologies">GitHub</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-lg font-light mb-2">Contact</h3>
+              <ul class="space-y-2 font-normal text-white">
+                <li><a href="prithvi@orangecat.ai">Email</a></li>
+                <li><a href="parth@orangecat.ai">Support</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
